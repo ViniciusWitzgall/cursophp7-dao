@@ -22,8 +22,19 @@ require_once("config.php");
 //echo json_encode($usuarios);
 
 //carrega um usuario usando o login e a senha
-$usuarios = new Usuario2();
-$usuarios->login("vinicius", "1234567890");
+//$usuarios = new Usuario2();
+//$usuarios->login("vinicius", "1234567890");
+//echo $usuarios;
+
+//criando um novo usuario
+//$aluno = new Usuario3("tito", "gostoso123");
+//$aluno->insert();
+//echo $aluno;
+
+//
+$usuarios = new Usuario4();
+$usuarios->loadById(7);
+$usuarios->update("nomvim","minmon");
 
 echo $usuarios;
 
