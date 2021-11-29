@@ -31,11 +31,23 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
-//
-$usuarios = new Usuario4();
-$usuarios->loadById(7);
-$usuarios->update("nomvim","minmon");
+//alterando o usuario
+//$usuarios = new Usuario4();
+//$usuarios->loadById(7);
+//$usuarios->update("nomvim","minmon");
+//echo $usuarios;
+
+
+//deletando o usuario
+
+$usuarios = new Usuario5();
+
+$usuarios->loadById(11);
+
+$usuarios->delete();
 
 echo $usuarios;
+
+
 
 ?>
